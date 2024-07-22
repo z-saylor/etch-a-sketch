@@ -8,14 +8,13 @@ for (let i=1; i <= gridSize; i++) {
     gridContainer.appendChild(rowDiv);
     
     for (let j=1; j <= gridSize; j++) {
-        itemDiv = document.createElement("div");
+        const itemDiv = document.createElement("div");
         itemDiv.setAttribute("class", "grid-item");
         itemDiv.setAttribute("id", `${i}-${j}`);
         rowDiv.appendChild(itemDiv);
 
         itemDiv.addEventListener("mouseenter", (e) => {
-            console.log(e.target.id);
-            
+            itemDiv.classList.add("hover");
         });
     }    
 }
