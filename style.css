@@ -21,6 +21,13 @@
     background-color: darkblue;
 }
 
+button {
+    margin-top: 16px;
+    padding: 8px 24px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
 /*
 .grid-row div:hover {
     background-color: darkblue;
